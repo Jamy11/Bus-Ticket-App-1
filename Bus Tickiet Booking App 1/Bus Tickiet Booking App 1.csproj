@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FC79AB7-1485-4922-AEB1-D57A06E21DD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bus_Tickiet_Booking_App_1</RootNamespace>
+    <AssemblyName>Bus Tickiet Booking App 1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bus Ticket UI\aBusSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\aBusSeat.Designer.cs">
+      <DependentUpon>aBusSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\AdminAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\AdminAcc.Designer.cs">
+      <DependentUpon>AdminAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\BusSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\BusSeat.Designer.cs">
+      <DependentUpon>BusSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ChangePasswordAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ChangePasswordAdmin.Designer.cs">
+      <DependentUpon>ChangePasswordAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ChangePasswordUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ChangePasswordUser.Designer.cs">
+      <DependentUpon>ChangePasswordUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\CreateAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\CreateAcc.Designer.cs">
+      <DependentUpon>CreateAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ForgotAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ForgotAdmin.Designer.cs">
+      <DependentUpon>ForgotAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ForgotUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\ForgotUser.Designer.cs">
+      <DependentUpon>ForgotUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\MainLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\MainLogin.Designer.cs">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\UserAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\UserAcc.Designer.cs">
+      <DependentUpon>UserAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Ticket UI\UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Ticket UI\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\AddBus.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\Admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\seat.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data Controller\AdminController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bus Ticket UI\aBusSeat.resx">
+      <DependentUpon>aBusSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\AdminAcc.resx">
+      <DependentUpon>AdminAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\BusSeat.resx">
+      <DependentUpon>BusSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\ChangePasswordAdmin.resx">
+      <DependentUpon>ChangePasswordAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\ChangePasswordUser.resx">
+      <DependentUpon>ChangePasswordUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\CreateAcc.resx">
+      <DependentUpon>CreateAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\ForgotAdmin.resx">
+      <DependentUpon>ForgotAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\ForgotUser.resx">
+      <DependentUpon>ForgotUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\MainLogin.resx">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\UserAcc.resx">
+      <DependentUpon>UserAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Ticket UI\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="Data Access\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data Access\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data Access\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Data Access\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
